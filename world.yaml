@@ -1,0 +1,88 @@
+---
+items:
+  pamphlet:
+    name: pamphlet
+    symbol: 📜
+    synonyms:
+      - pamphlet
+      - paper
+      - leaflet
+    description: It's a pamphlet. There is something written on it.
+    reaction:
+      - read
+      - take
+  ctesiphus:
+    name: Ctesiphus
+    symbol: 🐈
+    synonyms:
+      - ctesiphus
+      - cat
+    description: |-
+      You approach the blue cat and it nuzzles up to you, its interlocking plates of chitin brushing against your leg.
+      It seems to emanate a soft light. You inspect its collar...
+      ...'Ctesiphus'
+    reaction:
+      - pet
+rooms:
+  00:
+    name: Dining hall
+    description: |-
+      The massive auditory-sized dining hall is lined with smoothstone tables and thrones to match.
+      There is no food in sight, although you can smell something... There is a pamphlet here.
+
+      There is a large library through a west passageway, a door in the north side of the room, and in the south, a kitchen.
+    fardescription: There is a dining hall there.
+    items:
+      - pamphlet
+    connections:
+      north: 01
+      south: 03
+      west: 02
+      east: ~
+  01:
+    name: Workshop Hallways
+    description: |-
+      Strangely enough the hallway goes on for a while until reaching another wall.
+
+      There is nothing in this hallway. It might aswell have been called a hole.
+
+      There is a dining hall to the south.
+    fardescription: You open the door and find a winding hallway. You close the door.
+    items: []
+    connections:
+      north: ~
+      south: 00
+      west: ~
+      east: ~
+  02:
+    name: Library
+    description: |-
+      You can't actually see the ceiling in this monster of a room, with its walls that creep up into poorly-lit heights and bookshelves that do the same, unhindered, full of books, spiderwebs, parchment.
+      There are several tables and chairs strewn about, and writing implements. More parchment.
+      The bookshelves are spaced far apart, probably to grant more space to whatever studious denizens filled the room before you came here.
+
+      There is a dining hall east of here.
+    fardescription: It looks like a library.
+    items: []
+    connections:
+      north: ~
+      south: ~
+      west: ~
+      east: 00
+  03:
+    name: Kitchen
+    description: |-
+      You enter the kitchen, and immediately you recognize the sickeningly sweet smell of peach jam. There is a large clay pot here filled with the stuff.
+      Other than that, it looks like a pretty normal gourmet kitchen, stocked with pots, pans, knives, and of course unprepared food. Save for the pot of jam.
+      There's also a cat here! It seems to glisten in the light, oddly.
+
+      There is a dining hall north of here.
+    fardescription: There is a kitchen here. A sweet smell emanates from it.
+    items:
+      - ctesiphus
+    connections:
+      north: 00
+      south: ~
+      west: ~
+      east: ~
+

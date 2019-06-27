@@ -1,0 +1,64 @@
+---
+init:
+  users: {}
+  world: {}
+  effects: {}
+user_init:
+  avatar: {}
+  description: ''
+  room: 00
+  inventory: []
+effects:
+  glowing:
+    description: Your phosphorescence lights up the area around you.
+  hungry:
+    description: Ugh... Your stomach rumbles.
+world_file: world.yaml
+gen:
+  avatar:
+    species:
+      - dog
+      - werewolf
+      - skeleton
+      - ferret
+      - feline
+      - goblin
+      - demon
+      - viper
+      - toad
+      - kobold
+      - elk
+      - golem
+      - rabbit
+      - bear
+    descriptor:
+      - stout
+      - buff
+      - scrawny
+      - polite
+      - rude
+      - cool
+      - tempered
+      - angry
+      - funny
+      - humorless
+      - well-regarded
+    eyes:
+      - amber
+      - rust
+      - burnt umber
+      - pink
+      - red
+      - green
+      - taupe
+      - baby blue
+    preference:
+      - adventure
+      - friends
+      - spirits
+      - food
+      - sleeping
+      - violence
+      - decadence
+      - euphoria
+      - chess
